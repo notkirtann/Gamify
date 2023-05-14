@@ -1,0 +1,284 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* generic classes  */
+.white {
+  color:  white !important;
+
+}
+.dark{
+  color: black !important;
+}
+.flex {
+  display: flex;
+}
+
+/* Styling the navbar component   */
+
+nav {
+   display:  flex;
+   justify-content: space-between;
+   width: 80vw;
+   /* padding: 14px;  */
+   margin: auto;
+   margin-top: 15px;
+}
+.nav-menu{
+  display:  flex;
+  list-style: none;
+  align-items:  center;
+  justify-content: space-between;
+  list-style: none;
+  gap: 20px;
+}
+.nav-item{
+  font-size: 1.1rem;
+  font-weight: 450;
+  cursor: pointer;
+  transition: all .5s;
+}
+.nav-item:hover{
+  color: cornflowerblue;
+}
+.logo{
+  font-size: 2rem;
+}
+/* Stylend Navbar component */
+
+
+
+
+/* designing  about page */
+.about-back{
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  filter: brightness(40%);
+   /* z-index:  120; */
+}
+.about-card-cont{
+  width: 90vw;
+  height: 100vh;
+  gap: 29px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-card{
+  flex-basis: 25%;
+  /* border: 2px solid rebeccapurple; */
+  z-index:12;
+  position: relative;
+
+}
+.about-card img{
+   width: 100%;
+   opacity: .4;
+   filter: brightness(100%);
+   cursor: pointer;
+   border-radius: 3px;
+   transition: .5s;
+   opacity: 1;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+   }
+.intro{
+  height: 70px;
+  /* width: 250px; */
+  padding: 6px;
+  box-sizing: border-box;
+  bottom: 0px;
+  background: rgba(45, 2, 2, 0.105);
+  transition: .5s;
+  color: rgb(236, 238, 241);
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1{
+  margin: 20px;
+  font-size: 40px;
+}
+
+p{
+  font-size: 20px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+  color: aliceblue;
+}
+.about-head{
+  color:  white;
+  /* z-index: 12000000000; */
+  font-weight: 300;
+  font-size: 3rem;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+span{
+  font-weight: bold;
+  color: white;
+  opacity: 1;
+}
+
+.about-card:hover .intro{
+  height: 250px;
+  /* bottom: 240px; */
+  background: rgb(0, 0, 0);
+  /* transform: scale(1.1) rotate(-3deg); */
+  cursor: pointer;
+}
+
+.about-card:hover p{
+  opacity: 0.5;
+  visibility: visible;
+}
+
+.about-card:hover img{ 
+  transform: scale(1,1.2) rotate(3deg);
+}
+/* desinged about page */
+
+
+
+/* styling the home page  */
+.home{
+  /* border: 2px solid red; */
+  
+}
+.main-page{
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+.main-bg{
+  filter: brightness(40%);
+  height: 120vh;
+  width: 100vw;
+}
+/* style of home page */
+
+
+
+/* styling the landing flex component  */
+.landing-flex{
+  width: 100%;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.land-item{
+  flex-basis: 48%;
+  text-align: left !important;
+  padding: 12px;
+}
+.land-item h1{
+  font-size: 4rem;
+
+}
+.land-item h3{
+  font-size: 2.4rem;
+}
+.land-item h1 , h3 {
+  /* text-align: left; */
+  margin-left: 0px !important;
+  margin-top: 0px!important;
+  margin-bottom: 0px!important;
+  opacity: .8;
+  padding: 4px 32px ;
+}
+
+.land-item h3{
+  margin-top: 0px !important;
+}
+.land-item .text{
+  margin: 12px ;
+  opacity: .7;
+  padding: 4px 32px ;
+
+}
+.land-item .btn{
+   width: 50%;
+   margin: auto !important;
+   position: relative;
+   left: 25%; 
+   border: 2px solid white;
+   cursor: pointer;
+   transition: all .4s;
+   /* hardcoded need to change */
+}
+.land-item .btn:hover{
+  opacity: .4;
+}
+.land-item img{
+  width: 70%;
+  border-radius: 50%;
+}
+.land-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styled landing flex component  */
+
+
+/* styling login sign up page  */
+.entry{
+  position: relative;
+}
+ .entry img{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  filter: brightness(50%);
+  
+ }
+ .entry-item{
+  z-index: 120; 
+  color: white;
+  margin-top: 23px;
+  margin-left: 42px;
+ }
+
+
+ .form{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 90vh;
+  justify-content: center;
+  border-radius: 22px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  }
+  .form input{
+     margin-bottom: 12px;
+     width: 90%;
+     /* margin: auto; */
+     padding: 4px 12px;
+     border-radius: 8px;
+     margin-bottom: 12px;
+    filter: brightness(90%);
+  }
+  .form-btn{
+    cursor: pointer;
+    text-transform: capitalize;
+    padding: 2px;
+     text-decoration: underline;
+     transition: all .4s;
+  }
+.form-btn:hover{
+  color: aquamarine;
+}
+.form-icon{
+  cursor: pointer;
+  margin: 22px;
+}
+/* styled login page */
