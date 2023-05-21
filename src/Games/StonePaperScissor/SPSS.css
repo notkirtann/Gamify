@@ -1,0 +1,89 @@
+:root {
+    --primary: #0d47a1;
+    --primary-dark: #002171;
+    --primary-light: #5472d3;
+    --primary-text: #ffffff;
+  }
+  .sps{
+    background-color: var(--primary);
+    height: 100vh;
+  }
+  /* html {
+    background-color: var(--primary);
+  } */
+  
+  .center-sps h1 {
+    font-size: 24px;
+    margin: 0;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+    padding: 8px;
+  }
+  
+  .sps-h2{
+    font-size: 18px;
+    color: var(--primary-text);
+  }
+  
+  .center-sps{
+    text-align: center;
+  }
+  
+  .container-sps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: center;
+    padding: 90px;
+  }
+  
+  .player-sps{
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-text);
+    color: var(--primary-text);
+  }
+  
+  .score-sps{
+    padding: 1px;
+    font-size: small;
+    font-weight: bold;
+    background-color: var(--primary-dark);
+  }
+  
+  .action-sps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: var(--primary);
+  }
+  
+  .round-btn-sps{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    background-color: var(--primary-dark);
+    color: var(--primary-text);
+  }
+  
+  .round-btn-sps:hover {
+    background-color: var(--primary-light);
+  }
+  .sps-h2{
+    font-size: 1.7rem;
+  }
+  .icons-sps{
+    display: flex;
+    margin-bottom: 90px;
+    margin-top: 90px;
+    gap: 32px;
+    justify-content: center;
+  }

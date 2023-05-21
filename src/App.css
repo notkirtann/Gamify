@@ -159,8 +159,14 @@ span{
 }
 .main-bg{
   filter: brightness(40%);
-  height: 120vh;
   width: 100vw;
+}
+.medium{
+
+height: 100vh ;
+}
+.large{
+  height: 200vh;
 }
 /* style of home page */
 
@@ -282,3 +288,68 @@ span{
   margin: 22px;
 }
 /* styled login page */
+
+
+
+/* Styling Feed Page   */
+
+.feed-cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly !important;
+  align-items: center;
+  /* border: 2px solid yellow; */
+  margin: auto;
+  margin-top: 49px;
+
+}
+.feed-card img{
+  width: 70%;
+
+  margin: auto;
+ 
+}
+/* @keyframes animate {
+  45%{
+    transform: translateX(-10px);
+  }
+  75%{
+    transform: translateX(20px);
+
+  }
+  100%{
+    transform: translateY(20px);
+  }
+  
+  
+  
+} */
+.feed-card{
+  flex-basis: 32% !important;
+  /* padding: 19px; */
+  text-align: center;
+  margin-top: 4rem;
+
+  background: transparent;
+  margin-bottom: 120px;
+}
+.feed-card img{
+     border-radius: 9px ;
+}
+.game-intro h1{
+  opacity: .7;
+  padding-bottom: 13px;
+}
+
+.feed{
+  padding: 13px 9px;
+  padding-left: 0px;
+}
+/* Styled Feed Page */
+
+
+/* style for snake */
+
+.intro{
+  text-align: left !important ; 
+}
